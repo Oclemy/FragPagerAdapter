@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <android.support.v7.widget.CardView
+        android:orientation="horizontal" android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp"
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieImage"
+                android:padding="10dp"
+                android:src="@drawable/enterprise" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="INTER-STELLAR"
+                android:id="@+id/nameTxt"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/movieImage"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="This is the first probe to travel through the solar system's asteroid belt, a field of orbiting rocks between Mars and Jupiter. Then about a year-and-a-half after its launch, the spacecraft made the first flyby of the planet Jupiter. It took stunning up-close photos of the Great Red Spot and the wide swaths of red that band the planet. ....
+                "
+                android:id="@+id/descTxt"
+                android:padding="10dp"
+                android:layout_below="@+id/nameTxt"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="June 2011"
+                android:id="@+id/posTxt"
+                android:padding="10dp"
+
+                android:layout_below="@+id/movieImage"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
