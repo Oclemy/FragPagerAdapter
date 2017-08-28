@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+- ActivityMain.xml.
+- This is a template layout for our MainActivity.
+- Root layout tag is CoordinatorLayout from design support library.
+- CordinatorLayout is viewgroup that is a superpowered on framelayout.
+- CoordinatorLayout is intended for two primary use cases:
+As a top-level application decor or chrome layout
+As a container for a specific interaction with one or more child views
+- Inside our CordinatorLayout we add : AppBarLayout,FloatingActionButton and include content_main.xml.
+- AppBarLayout is vertical LinearLayout that implements scrolling features of material design concept.
+- It should be a direct child of CordinatorLayout, otherwise alot of features won't work.
+- Inside the AppBarLayout we add our toolbar,which we give a blue color.
+- Next we add TabLayout from design support library.
+- TabLayout derives from android.widget.HorizontalScrollView and provides the layout to display our tabs.
+-
+-->
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,8 +43,6 @@
             />
 
     </android.support.design.widget.AppBarLayout>
-
-
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
