@@ -8,7 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Hp on 3/22/2016.
+ - Intergalactic Fragment.
+ - Derives from android.support.v4.app.Fragment.
+ - We define a static method to return this current fragment.
+ - Methods: newInstance(), onCreateView(),toString().
  */
 public class InterStellar extends Fragment {
 
