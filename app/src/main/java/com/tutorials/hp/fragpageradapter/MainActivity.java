@@ -5,12 +5,23 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-
+/*
+- Our MainActivity.
+- Derives from AppcompatActivity and implements TabLayout.onTabSelectedListener interface.
+- Inflated from activity_main.xml.
+- We create fragment instances here and add them to our fragments collection, then set the adapter to viewpager.
+- When tab is selected, we set the current fragment to our ViewPager.
+- Methods: onCreate(),addPages(),onTabSelected(),onTabUnselected(),onTabReselcted()
+ */
 public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener{
 
+    //DECLARATIONS.
     private TabLayout tab;
     private ViewPager vp;
 
+    /*
+    WHEN ACTIVITY IS CREATED.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         tab.setupWithViewPager(vp);
         tab.addOnTabSelectedListener(this);
     }
+    /*
+    ADD Fragment Pages TO MyPagerAdapter.
+    Set adapter to viewpage.
+     */
     private void addPages(ViewPager viewPager)
     {
         MyPagerAdapter myPagerAdapter=new MyPagerAdapter(getSupportFragmentManager());
@@ -34,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         vp.setAdapter(myPagerAdapter);
     }
 
+    /*
+    WHEN TAB IS SELECTED.
+     */
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         vp.setCurrentItem(tab.getPosition());
