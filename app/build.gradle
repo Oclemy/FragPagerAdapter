@@ -18,7 +18,13 @@ android {
         }
     }
 }
-
+/*
+- Our app level build.gradle.
+- We add three support libraries: appcompat,design and cardview.
+- Our MainActivity will derive from AppcompatActivity while our Fragments will have CardViews.
+- We also get appbarlayout and cordinatorlayout from support design library.
+- We are not using any third party library.
+ */
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
