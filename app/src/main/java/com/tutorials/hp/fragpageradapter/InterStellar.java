@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- - Intergalactic Fragment.
+ - Interstellar Fragment.
  - Derives from android.support.v4.app.Fragment.
  - We define a static method to return this current fragment.
  - Methods: newInstance(), onCreateView(),toString().
